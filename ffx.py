@@ -5,14 +5,15 @@ import pyffx
 
 DESCRIPTION = '''\
     Format-preserving, Feistel-based cryptography.
-        $ echo 4012888888881881 | python %(prog)s -e qwerty 0123456789
-        9356030022219797
-        $ echo 9356030022219797 | python %(prog)s -d qwerty 0123456789
-        4012888888881881
-        $ echo '$😊qwerty🍦*' | python %(prog)s -e secret-squirrel '*$😊🍦abcdefghijklmnopqrstuvwxyz'
+        $ echo 8005551212 | python %(prog)s -e mypassword 0123456789
+        9441166894
+        $ echo 9441166894 | python %(prog)s -d mypassword 0123456789
+        8005551212
+        $ echo '+😊qwerty🍦*' | python %(prog)s -e secret-squirrel '*+😊🍦abcdefghijklmnopqrstuvwxyz'
         rgmty🍦udpv
-        $ echo 'rgmty🍦udpv' | python %(prog)s -d secret-squirrel '*$😊🍦abcdefghijklmnopqrstuvwxyz'
-        $😊qwerty🍦*
+        $ echo 'rgmty🍦udpv' | python %(prog)s -d secret-squirrel '*+😊🍦abcdefghijklmnopqrstuvwxyz'
+        +😊qwerty🍦*
+        $
 '''
 
 parser = ArgumentParser(formatter_class=RawDescriptionHelpFormatter, description=dedent(DESCRIPTION))

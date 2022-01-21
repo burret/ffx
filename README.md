@@ -1,7 +1,6 @@
 # Format-preserving, Feistel-based cryptography command-line interface 
 
-> Format Preserving Encryption is a method which allows the basic formatting of a message to stay in a similar format, and where the value itself is encrypted. It can be used to hide credit card details.
-— Bill Buchanan
+“Format Preserving Encryption is a method which allows the basic formatting of a message to stay in a similar format, and where the value itself is encrypted. It can be used to hide credit card details.”  — Bill Buchanan
 
 ## Examples
 
